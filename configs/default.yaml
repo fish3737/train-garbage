@@ -1,0 +1,22 @@
+seed: 42
+device_target: CPU
+
+mnist:
+  data_dir: data/mnist
+  batch_size: 64
+  epochs: 2
+  learning_rate: 0.001
+  checkpoint: checkpoints/lenet5_mnist.ckpt
+
+garbage:
+  zip_path: data/data_en.zip
+  raw_dir: data/garbage_raw
+  prepared_dir: data/garbage_split
+  image_size: 32
+  batch_size: 32
+  epochs: 5
+  learning_rate: 0.0005
+  train_ratio: 0.8
+  checkpoint_frozen: checkpoints/lenet5_garbage_frozen.ckpt
+  checkpoint_full: checkpoints/lenet5_garbage_full.ckpt
+

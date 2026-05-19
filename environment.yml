@@ -1,0 +1,14 @@
+name: ai_hw3_ms
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      - mindspore==2.9.0
+      - numpy
+      - pillow
+      - matplotlib
+      - scikit-learn
+      - tqdm
+

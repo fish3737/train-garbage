@@ -1,0 +1,140 @@
+{
+  "task": "garbage_transfer",
+  "pretrained_checkpoint": "checkpoints/lenet5_mnist.ckpt",
+  "class_to_idx": {
+    "Banana Peel": 0,
+    "Basketball": 1,
+    "Battery": 2,
+    "Broom": 3,
+    "Cans": 4,
+    "Cardboard": 5,
+    "Ceramic Bowl": 6,
+    "Dirty Cloth": 7,
+    "Disposable Chopsticks": 8,
+    "Eggshell": 9,
+    "Fluorescent lamp": 10,
+    "Glass Bottle": 11,
+    "Glassware": 12,
+    "Hats": 13,
+    "Lighter": 14,
+    "Metalware": 15,
+    "Newspaper": 16,
+    "Old Mirror": 17,
+    "Orange Peel": 18,
+    "Paint bucket": 19,
+    "Paper": 20,
+    "Plastic Bottle": 21,
+    "Seashell": 22,
+    "Tablet capsules": 23,
+    "Toothbrush": 24,
+    "Vegetable Leaf": 25
+  },
+  "experiments": [
+    {
+      "mode": "frozen",
+      "epochs": 5,
+      "batch_size": 32,
+      "learning_rate": 0.0005,
+      "train_seconds": 3.180472417,
+      "memory_peak_mb": 398.8125,
+      "checkpoint": "checkpoints/lenet5_garbage_frozen.ckpt",
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 3.338055372238159,
+          "val_loss": 3.2700016366110907,
+          "val_accuracy": 0.03893805309734513,
+          "memory_peak_mb": 396.09375
+        },
+        {
+          "epoch": 2,
+          "train_loss": 3.260375254081957,
+          "val_loss": 3.2295751174290976,
+          "val_accuracy": 0.049557522123893805,
+          "memory_peak_mb": 397.0
+        },
+        {
+          "epoch": 3,
+          "train_loss": 3.2144802881009653,
+          "val_loss": 3.200772669580248,
+          "val_accuracy": 0.07256637168141593,
+          "memory_peak_mb": 397.453125
+        },
+        {
+          "epoch": 4,
+          "train_loss": 3.178075920451771,
+          "val_loss": 3.1780230469173856,
+          "val_accuracy": 0.0831858407079646,
+          "memory_peak_mb": 397.953125
+        },
+        {
+          "epoch": 5,
+          "train_loss": 3.147849010698723,
+          "val_loss": 3.1598052183787027,
+          "val_accuracy": 0.09026548672566372,
+          "memory_peak_mb": 398.8125
+        }
+      ],
+      "final": {
+        "epoch": 5,
+        "train_loss": 3.147849010698723,
+        "val_loss": 3.1598052183787027,
+        "val_accuracy": 0.09026548672566372,
+        "memory_peak_mb": 398.8125
+      }
+    },
+    {
+      "mode": "full",
+      "epochs": 5,
+      "batch_size": 32,
+      "learning_rate": 0.0005,
+      "train_seconds": 3.437098292,
+      "memory_peak_mb": 408.171875,
+      "checkpoint": "checkpoints/lenet5_garbage_full.ckpt",
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 3.2466129209056045,
+          "val_loss": 3.196409304936727,
+          "val_accuracy": 0.07079646017699115,
+          "memory_peak_mb": 404.296875
+        },
+        {
+          "epoch": 2,
+          "train_loss": 3.1067390225150366,
+          "val_loss": 3.0482166608174643,
+          "val_accuracy": 0.11150442477876106,
+          "memory_peak_mb": 405.109375
+        },
+        {
+          "epoch": 3,
+          "train_loss": 2.9115855368700894,
+          "val_loss": 2.9357571601867676,
+          "val_accuracy": 0.14513274336283186,
+          "memory_peak_mb": 406.171875
+        },
+        {
+          "epoch": 4,
+          "train_loss": 2.752952456474304,
+          "val_loss": 2.8645349078708224,
+          "val_accuracy": 0.16460176991150444,
+          "memory_peak_mb": 406.84375
+        },
+        {
+          "epoch": 5,
+          "train_loss": 2.611281745361559,
+          "val_loss": 2.7946141825781927,
+          "val_accuracy": 0.1911504424778761,
+          "memory_peak_mb": 408.171875
+        }
+      ],
+      "final": {
+        "epoch": 5,
+        "train_loss": 2.611281745361559,
+        "val_loss": 2.7946141825781927,
+        "val_accuracy": 0.1911504424778761,
+        "memory_peak_mb": 408.171875
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "task": "garbage_improved",
+  "model": "ImprovedGarbageCNN",
+  "class_to_idx": {
+    "Banana Peel": 0,
+    "Basketball": 1,
+    "Battery": 2,
+    "Broom": 3,
+    "Cans": 4,
+    "Cardboard": 5,
+    "Ceramic Bowl": 6,
+    "Dirty Cloth": 7,
+    "Disposable Chopsticks": 8,
+    "Eggshell": 9,
+    "Fluorescent lamp": 10,
+    "Glass Bottle": 11,
+    "Glassware": 12,
+    "Hats": 13,
+    "Lighter": 14,
+    "Metalware": 15,
+    "Newspaper": 16,
+    "Old Mirror": 17,
+    "Orange Peel": 18,
+    "Paint bucket": 19,
+    "Paper": 20,
+    "Plastic Bottle": 21,
+    "Seashell": 22,
+    "Tablet capsules": 23,
+    "Toothbrush": 24,
+    "Vegetable Leaf": 25
+  },
+  "epochs": 5,
+  "batch_size": 32,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.0001,
+  "image_size": 64,
+  "train_seconds": 65.867393667,
+  "memory_peak_mb": 720.890625,
+  "checkpoint": "checkpoints/improved_garbage_cnn.ckpt",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.8912637197610103,
+      "val_loss": 2.5116344226731195,
+      "val_accuracy": 0.24424778761061947,
+      "memory_peak_mb": 695.796875
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.46419826782111,
+      "val_loss": 2.22543767425749,
+      "val_accuracy": 0.3415929203539823,
+      "memory_peak_mb": 720.890625
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.2104720960963857,
+      "val_loss": 2.080660041835573,
+      "val_accuracy": 0.3858407079646018,
+      "memory_peak_mb": 720.890625
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.967954973379771,
+      "val_loss": 1.8635245445701811,
+      "val_accuracy": 0.4230088495575221,
+      "memory_peak_mb": 720.890625
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.7646117987054768,
+      "val_loss": 1.700601807071103,
+      "val_accuracy": 0.4725663716814159,
+      "memory_peak_mb": 720.890625
+    }
+  ],
+  "final": {
+    "epoch": 5,
+    "train_loss": 1.7646117987054768,
+    "val_loss": 1.700601807071103,
+    "val_accuracy": 0.4725663716814159,
+    "memory_peak_mb": 720.890625
+  }
+}

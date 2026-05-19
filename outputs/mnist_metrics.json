@@ -1,0 +1,28 @@
+{
+  "task": "mnist_pretrain",
+  "epochs": 2,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "train_seconds": 28.284796083,
+  "checkpoint": "checkpoints/lenet5_mnist.ckpt",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.20812354745241946,
+      "val_loss": 0.06543710335917106,
+      "val_accuracy": 0.9761
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0637501296440682,
+      "val_loss": 0.04972046521177351,
+      "val_accuracy": 0.9831
+    }
+  ],
+  "final": {
+    "epoch": 2,
+    "train_loss": 0.0637501296440682,
+    "val_loss": 0.04972046521177351,
+    "val_accuracy": 0.9831
+  }
+}
